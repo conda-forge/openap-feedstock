@@ -21,7 +21,6 @@ requirements:
     - python >=3.6
     - numpy
     - scipy
-    - scikit-fuzzy
     - pandas
     - pyyaml
     - matplotlib-base
