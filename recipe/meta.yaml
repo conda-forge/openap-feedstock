@@ -14,9 +14,9 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  host:
+ host:
     - python {{ python_min }}
-    - poetry-core >=1.0.0
+    - hatchling
     - pip
   run:
     - python >={{ python_min }}
