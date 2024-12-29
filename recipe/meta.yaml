@@ -1,4 +1,4 @@
-{% set version = "2.0" %}
+{% set version = "2.2" %}
 
 package:
   name: openap
@@ -6,17 +6,17 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/openap/openap-{{ version }}.tar.gz
-  sha256: fea6801fe0e1cae9c68c81859e82e869050be9a310d499fb94f27a11993f418b
+  sha256: f0e2426c73b619d45bfe46994d56db603803131ec430e59a7a7527b1f9092ed4
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=1.0.0
+    - hatchling
     - pip
   run:
     - python >={{ python_min }}
