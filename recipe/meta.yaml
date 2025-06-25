@@ -1,4 +1,4 @@
-{% set version = "2.2" %}
+{% set version = "2.3" %}
 
 package:
   name: openap
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/openap/openap-{{ version }}.tar.gz
-  sha256: f0e2426c73b619d45bfe46994d56db603803131ec430e59a7a7527b1f9092ed4
+  sha256: e5cf5ef779410fc191443707d02f5d95adb573eb481a41ab44319fbaae90c933
 
 build:
   noarch: python
